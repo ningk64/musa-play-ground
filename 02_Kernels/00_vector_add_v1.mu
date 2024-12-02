@@ -18,7 +18,7 @@ void vector_add_cpu(float *a, float *b, float *c, int n) {
     }
 }
 
-// CUDA kernel for vector addition
+// MUSA kernel for vector addition
 __global__ void vector_add_gpu(float *a, float *b, float *c, int n) {
     int i = blockIdx.x * blockDim.x + threadIdx.x;
     if (i < n) {
