@@ -6,7 +6,7 @@
 #define M 256  // Number of rows in A and C
 #define K 512   // Number of columns in A and rows in B
 #define N 256  // Number of columns in B and C
-#define BLOCK_SIZE 32
+#define BLOCK_SIZE 256
 
 // Example 3x2 @ 2x4 = 3x4 -> (M x K) @ (K x N) = (M x N)
 // A = [[1, 2], 
