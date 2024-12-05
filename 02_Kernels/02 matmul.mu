@@ -38,7 +38,7 @@ void matmul_cpu(float *A, float *B, float *C, int m, int k, int n) {
     }
 }
 
-// CUDA kernel for matrix multiplication
+// MUSA kernel for matrix multiplication
 __global__ void matmul_gpu(float *A, float *B, float *C, int m, int k, int n) {
     int row = blockIdx.y * blockDim.y + threadIdx.y;
     int col = blockIdx.x * blockDim.x + threadIdx.x;
